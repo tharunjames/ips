@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://ipossoft.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://ipossoft.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://ipossoft.com.cp-in-14.webhostbox.net/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://ipossoft.com.cp-in-14.webhostbox.net$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.ipossoft.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.ipossoft.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.ipossoft.com.cp-in-14.webhostbox.net/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.ipossoft.com.cp-in-14.webhostbox.net$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
